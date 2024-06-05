@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f3a5c6;
+    background-color: #ffffff;
 }
 
 header {
@@ -14,23 +14,38 @@ header {
 }
 
 .cabeca {
-    display: flex ;
+    display: flex;
     align-items: center;
-    background-color: #7E4D4D;
-    height: 100px;
+    background-color: #A1D0A6;
+    height: 80px;
     width: 100%;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
 }
 
 h1 {
     margin-left: 45px;
     font-family: 'Playfair Display', serif;
-    color: white;
+    color: #716B6B;
     font-size: 4rem;
     font-weight: 400;
 }
 
-h2{
+a {
+    text-decoration: none;
+}
+
+.sub {
+    margin-top: -20px;
+    height: 40px;
+    width: 100%;
+    background-color: #6B9C70;
+    position: relative;
+    z-index: 3;
+}
+
+h2 {
     margin-right: 45px;
     margin-top: 60px;
     font-style: italic;
@@ -39,86 +54,17 @@ h2{
     font-weight: 400;
 }
 
-
-.botao1 {
-    background: #E7E9DF;
-    width: 200px;
+.botao1, .botao2, .botao3, .botao4 {
+    width: 700px;
     height: 60px;
-    left: 10px;
-    top: 167px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
+    border-radius: 10px;
 }
 
-.botao2 {
-    background: #EDCFC7;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
-
-.botao3 {
-    background: #EAC2B0;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
-
-.botao4 {
-    background: #CC9A8B;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
-
-.botao5 {
-    background: #D19477;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
-
-.botao6 {
-    background: #C4926B;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
-
-.botao7 {
-    background: #593010;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
-
-.botao8 {
-    background: #241a11;
-    width: 200px;
-    height: 60px;
-    left: 10px;
-    top: 167px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 37px;
-}
+.botao1 { background: #EFACDF; }
+.botao2 { background: #EFACDF; }
+.botao3 { background: #EFACDF; }
+.botao4 { background: #EFACDF; }
 
 .botoes {
     display: flex;
@@ -127,58 +73,79 @@ h2{
     gap: 1%;
     width: 98vw;
     height: 80px;
-    left: 10px;
     align-items: center;
-}
-
-.nome {
-    margin-left: 50px;
-    font-family: 'Playfair Display', serif;
-    color: black;
-    font-size: 40px;
-    padding-top: 50px;
-    width: 20%;
-}
-
-.linha {
-    height: 20px;
-    width: 986px;
     position: relative;
-    top: -60px;
-    left: 225px;
+    z-index: 1;
+    margin-top: -40px;
+    transition: height 0.3s ease, z-index 0.3s ease;
+}
+
+.botao1:hover {
+    height: 100px;
+    z-index: 0;
+}
+
+.botao2:hover {
+    height: 100px;
+    z-index: 0;
+}
+
+.botao3:hover {
+    height: 100px;
+    z-index: 0;
+}
+
+.botao4:hover {
+    height: 100px;
+    z-index: 0;
 }
 
 .fundo {
-    height: 408px;
-    background-color: #7E4D4D;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-top: 60px;
+    height: 420px;
+    width: 60%;
+    background-color: #ffffff;
+    margin-left: 300px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-radius: 50px;
 }
 
-.imagem {
+.imagemDiabo {
     position: absolute;
-    left: 890px;
-    top: 344px;
+    left: 1290px;
+    top: 470px;
+}
+
+.imagemAnjo {
+    position: absolute;
+    left: 70px;
+    top: 500px;
+}
+
+pre {
+    color: black;
+    margin-left: -30px;
 }
 
 .nomes {
-    background-color: #7E4D4D;
-    margin-top: 50px;
+    background-color: #A1D0A6;
+    margin-top: 64px;
     display: flex;
     flex-direction: row;
     gap: 360px;
-    color: white;
+    height: 25px;
+}
+
+.gj, .copy, .km {
+    color: #716B6B;
+    margin-top: 5px;
 }
 
 .gj {
-    word-spacing: 3px;
+    padding-left: 60px;
 }
 
-.km {
-    word-spacing: 3px;
-}
-
-.telaInfo{
+.telaInfo {
     padding: 50px;
     color: white;
 }
